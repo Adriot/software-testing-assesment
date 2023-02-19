@@ -16,7 +16,7 @@ pipeline{
             steps {
                  dir('automationSolution') {
                      withMaven(maven: 'Maven_3.9.0') {
-                         sh 'mvn test'
+                         sh 'mvn test -Dtest="AddProductsToCarAndCheckoutRunner"'
                      }
                  }
             }
