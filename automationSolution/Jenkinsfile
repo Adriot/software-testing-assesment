@@ -18,7 +18,7 @@ pipeline{
                 dir('automationSolution') {
                   sh "pwd"
                 }
-                withMaven(maven: 'maven_3_5_0') {
+                withMaven(maven: 'Maven_3.9.0') {
                     sh 'mvn test -e -Dgroups=categories.dbd -Dtest=automated_test.option_two.AddProductsToCarAndCheckoutRunner'
                 }
             }
