@@ -4,13 +4,20 @@ pipeline{
     stages {
         stage ('Compile Stage') {
             steps {
+                dir('automationSolution') {
+                  sh "pwd"
+                }
                 withMaven(maven: 'maven_3_5_0') {
                     sh 'mvn clean install'
                 }
             }
         }
+
     stage ('Test Stage') {
             steps {
+                dir('automationSolution') {
+                  sh "pwd"
+                }
                 withMaven(maven: 'maven_3_5_0') {
                     sh 'mvn test -e -Dgroups=categories.dbd -Dtest=automated_test.option_two.AddProductsToCarAndCheckoutRunner'
                 }
