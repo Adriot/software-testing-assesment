@@ -24,21 +24,21 @@ public class DriverManagerFactory {
             case CHROME:
                 driverManager = new ChromeDriverManager();
                 break;
-            case FIREFOX:
+            /*case FIREFOX:
                 driverManager = new FireFoxDriverManager();
                 break;
             case OPERA:
                 driverManager = new OperaDriverManager();
-                break;
+                break;*/
             case EDGE:
                 driverManager = new EdgeDriverManager();
                 break;
-            case PHANTOMJS:
+            /*case PHANTOMJS:
                 driverManager = new PhantomJsDriverManager();
                 break;
             case IEXPLORER:
                 driverManager = new InternetExplorerDriverManager();
-                break;
+                break;*/
             default:
                 driverManager = new ChromeDriverManager();
         }
