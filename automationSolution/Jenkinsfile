@@ -19,7 +19,7 @@ pipeline{
                   sh "pwd"
                 }
                 withMaven(maven: 'Maven_3.9.0') {
-                    sh 'mvn test -e -Dgroups=categories.dbd -Dtest=automated_test.option_two.AddProductsToCarAndCheckoutRunner'
+                    sh 'cd automationSolution mvn test -e -Dgroups=categories.dbd -Dtest=automated_test.option_two.AddProductsToCarAndCheckoutRunner'
                 }
             }
         }
