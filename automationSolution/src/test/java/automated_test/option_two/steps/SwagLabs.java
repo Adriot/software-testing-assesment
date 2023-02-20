@@ -20,7 +20,7 @@ public class SwagLabs {
             DriverManager driverManager = DriverManagerFactory.getDriverManager();
 
             if (properties.getProperty("DRIVER_MANAGER").equalsIgnoreCase("YES")) {
-                webDriver = driverManager.getWebDriver(false);
+                webDriver = driverManager.getWebDriver(true);
             } else {
                 webDriver = driverManager.getWebDriver("EDGE_DRIVER_PATH");
             }
