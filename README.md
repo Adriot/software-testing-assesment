@@ -14,7 +14,7 @@
 
 1. Download and install jenkins
 
-2. Setup a multi-branch piprline:
+2. Setup a multi-branch pipeline:
     - Repository Source: https://github.com/Adriot/software-testing-assesment.git
     - Set the jenkinsfile path to: automationSolution/Jenkinsfile
     - Manualy run the job
