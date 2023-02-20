@@ -1,0 +1,15 @@
+Below are the basic requirements:
+
+Ability to add users based on the available licenses
+Ability to edit user details
+Ability to remove users
+Questions
+
+Given the above high level requirements, what are some of the questions you would ask each of following team members to understand this feature better?
+
+Product owner
+UX designer
+Technical Architect
+In order to delight the user with these features, how would you want it to work?
+
+Based on your response to the previous question what would you automate inthe testing of this feature?
