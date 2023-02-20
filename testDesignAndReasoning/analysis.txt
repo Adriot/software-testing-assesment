@@ -3,13 +3,41 @@ Below are the basic requirements:
 Ability to add users based on the available licenses
 Ability to edit user details
 Ability to remove users
+
 Questions
 
-Given the above high level requirements, what are some of the questions you would ask each of following team members to understand this feature better?
+1. Given the above high level requirements, what are some of the questions you would ask each of following team members to understand this feature better?
 
-Product owner
-UX designer
-Technical Architect
-In order to delight the user with these features, how would you want it to work?
+Product owner: 
+    - Who are the users of the system?
+    - What are some of the business rules that are enforced or applied?
+    - Based on their understanding, what is meant by available licenses?
+    - Can users of other roles view or use their records once added by an administrator?
+    - What kind of interface will be used to allow administrators to use the features?
+    - Is the project Agile, waterfall, hybrid etc.,?
+    - After the first release, are we planing on adding more features or just maintaining?
 
-Based on your response to the previous question what would you automate inthe testing of this feature?
+UX designer: 
+    - How many screens are available per feature (add user, edit user details and remove users)?
+    - Which framework will be used to develop the application (if they know already)?
+    - Do we have wireframes or prototype? if not, how low will it take to create?
+    - Is it mobile, web, mainframe etc.,
+    - Was the prototype tested with selected future users?
+    - If yes, how was the feedback?
+
+Technical Architect: 
+    - What's the technology stack of the peoject? Back-end, front-end etc.,
+    - Based on the SDLC of the project, how well will testing fit it?
+    - Is there a need for automated testing?
+    - What level of access will QA engineers get? Will they have access to code repositories, databases, build-pipelines?
+    - Which other systems does the application impact?
+    - Can we be provided with the componets flow and impact diagram so that we can to impact analysis?
+
+2. In order to delight the user with these features, how would you want it to work?
+    - I would like for the applications to be accessible via Web (All users roles, with this functionality toggled for Admin only) and Mobile (normal user roles)
+
+3. Based on your response to the previous question what would you automate inthe testing of this feature?
+    - Backend, API automation and Database validation
+    - Mobile Automation of viewing added, updated and deleted data by all users.
+    - Web automation for Adding, Updating and Deleting users by Admin Roles
+    - Web automation for viewing added, updated and deleted data by all users.
