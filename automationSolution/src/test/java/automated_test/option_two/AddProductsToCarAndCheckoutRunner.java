@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features"},
         glue = {"automated_test/option_two/steps"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/swaglabs/Add Products To Cart And Checkout.html",
-        "json:target/cucumber-reports/swaglabs/add products to cart and checkout.json"}
+        "json:target/cucumber-reports/swaglabs/cucumber.json"}
 )
 
 public class AddProductsToCarAndCheckoutRunner {
